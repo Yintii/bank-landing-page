@@ -1,0 +1,21 @@
+@use 'base';
+@use 'intro';
+@use 'features';
+@use 'articles';
+@use 'footer';
+
+/*Page wide things*/
+.section-title{
+  font-size: 32px;
+  text-align: center;
+}
+
+.request-btn{
+  background: linear-gradient(hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+  color: base.$white;
+  width:163px;
+  padding: 20px 30px;
+  margin:10px auto;
+  border-radius: 50px;
+  text-align: center;
+}

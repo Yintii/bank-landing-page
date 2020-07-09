@@ -1,0 +1,24 @@
+// _base.scss
+$font-stack: 'Public Sans', sans-serif;
+$body-font-size: 18px;
+//Primary Colors
+$dark-Blue: hsl(233, 26%, 24%);
+$lime-Green: hsl(136, 65%, 51%);
+$bright-Cyan: hsl(192, 70%, 51%);
+
+//Neutral Colors
+$grayish-Blue: hsl(233, 8%, 62%);
+$light-Grayish-Blue: hsl(220, 16%, 96%);
+$very-Light-Gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+
+
+.hidden{
+  display: none;
+}
+html, body{
+  margin:0;
+  padding:0;
+  font: 100% $font-stack;
+}

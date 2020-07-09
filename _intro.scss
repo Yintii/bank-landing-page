@@ -1,0 +1,45 @@
+@use 'base';
+#navbar{
+  z-index: 10;
+  background-color: white;
+  position: relative;
+  display:flex;
+  height:64px;
+  justify-content: space-between;
+  padding: 0px 20px;
+  img{
+    align-self: center;
+  }
+}
+#intro{
+  background: url('./images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display:flex;
+  flex-flow: column nowrap;
+  z-index: -1;
+  position: relative;
+  bottom:105px;
+  right:0px;
+  text-align: center;
+  width:100vw;
+  margin:auto;
+  img{
+    position: relative;
+    bottom:10px;
+    height:402px;
+    align-self: center;
+    z-index: 0;
+  }
+  p {
+    color: base.$grayish-Blue;
+    margin: 20px auto;
+    font-size:15px;
+    line-height: 2;
+    width: 327px;
+  }
+}
+#next-gen-title{
+  font-weight: 400;
+  font-size: 40px;
+}

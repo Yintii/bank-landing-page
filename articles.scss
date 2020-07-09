@@ -1,0 +1,35 @@
+@use 'base';
+#latest-articles{
+  display:flex;
+  background-color: base.$very-Light-Gray;
+  flex-flow:column nowrap;
+  padding:100px 0px;
+  align-content: center;
+  .article{
+    background-color: base.$white;
+    display:flex;
+    flex-flow:column nowrap;
+    margin: 40px auto;
+    width:327px;
+    img{
+      width:327px;
+      height:200px;
+    }
+    .content-section{
+      padding:30px;
+      span{
+        color: base.$grayish-Blue;
+        font-size: 10px;
+      }
+      .article-title{
+        font-size: 16px;
+        padding-top:10px;
+      }
+      p{
+        font-size: 13px;
+        color: base.$grayish-Blue;
+        line-height: 1.5;
+      }
+    }
+  }
+}

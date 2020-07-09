@@ -1,0 +1,29 @@
+@use 'base';
+
+#features{
+  background-color: base.$light-Grayish-Blue;
+  padding: 100px 0px 50px 0px;
+  text-align: center;
+  .feature{
+    margin: 30px auto;
+    width: 327px;
+  }
+
+  .section-description{
+    margin-bottom:50px;
+    width: 327px;
+    text-align: center;
+    margin:20px auto 50px auto;
+  }
+  img{
+    padding: 10px;
+  }
+  .feature-title{
+    padding:10px;
+    font-size:20px;
+  }
+  p{
+    color: base.$grayish-Blue;
+    line-height: 1.75;
+  }
+}
