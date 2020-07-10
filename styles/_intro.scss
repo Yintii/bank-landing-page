@@ -12,7 +12,7 @@
   }
 }
 #intro{
-  background: url('./images/bg-intro-mobile.svg');
+  background: url('../images/bg-intro-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
   display:flex;
@@ -42,4 +42,39 @@
 #next-gen-title{
   font-weight: 400;
   font-size: 40px;
+}
+
+@media (min-width:415px){
+  #intro{
+    background: unset;
+    background-repeat: unset;
+    background-size: unset;
+    display:flex;
+    flex-flow:row nowrap;
+    z-index:unset;
+    position: unset;
+    bottom:unset;
+    right:unset;
+    text-align:unset;
+    width:unset;
+    margin:0;
+    img{
+      position: unset;
+      bottom:unset;
+      height:unset;
+      align-self: unset;
+      z-index: unset;
+      order:2;
+    }
+    #next-gen-text{
+      order:1;
+      #next-gen-title{
+
+      }
+      p {
+        margin:0;
+        width: unset;
+      }
+    }
+  }
 }

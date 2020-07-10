@@ -6,6 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   font: 100% "Public Sans", sans-serif;
+  width: 100vw;
 }
 
 #navbar {
@@ -22,7 +23,7 @@ html, body {
 }
 
 #intro {
-  background: url("./images/bg-intro-mobile.svg");
+  background: url("../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -55,6 +56,37 @@ html, body {
   font-size: 40px;
 }
 
+@media (min-width: 415px) {
+  #intro {
+    background: unset;
+    background-repeat: unset;
+    background-size: unset;
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: unset;
+    position: unset;
+    bottom: unset;
+    right: unset;
+    text-align: unset;
+    width: unset;
+    margin: 0;
+  }
+  #intro img {
+    position: unset;
+    bottom: unset;
+    height: unset;
+    align-self: unset;
+    z-index: unset;
+    order: 2;
+  }
+  #intro #next-gen-text {
+    order: 1;
+  }
+  #intro #next-gen-text p {
+    margin: 0;
+    width: unset;
+  }
+}
 #features {
   background-color: #f3f4f6;
   padding: 100px 0px 50px 0px;
