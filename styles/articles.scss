@@ -33,3 +33,29 @@
     }
   }
 }
+@media (min-width:415px){
+  #latest-articles{
+    flex-flow:column nowrap;
+      .encapsulator{
+        width:1110px;
+        margin:auto;
+        flex-flow:column nowrap;
+      }
+      .section-title{
+        padding:50px 0px;
+      }
+      #articles{
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content: center;
+        .article{
+          width:255px;
+          margin: 0px 50px;
+          img{
+            height:200px;
+            width:inherit;
+          }
+        }
+      }
+    }
+}

@@ -4,38 +4,105 @@ footer{
   color:white;
   display:flex;
   flex-flow:column nowrap;
-  img{
-    align-self: center;
-    width:139px;
-    height:20px;
-    padding: 50px 0px 20px 0px;
-  }
-  #social-media-icons{
+  .encapsulator{
     display:flex;
-    flex-flow:row nowrap;
-    width:50vw;
-    margin:auto;
-    padding:15px;
-    justify-content: space-between;
+    flex-flow:column nowrap;
     img{
-      width:24px;
-      height:24px;
-      padding:10px 0px;
+      align-self: center;
+      width:139px;
+      height:20px;
+      padding: 50px 0px 20px 0px;
+    }
+    #social-media-icons{
+      display:flex;
+      flex-flow:row nowrap;
+      width:50vw;
+      margin:auto;
+      padding:15px;
+      justify-content: space-between;
+      img{
+        width:24px;
+        height:24px;
+        padding:10px 0px;
+      }
+    }
+    a{
+      text-decoration: none;
+      color:white;
+      text-align: center;
+      padding: 10px 0px;
+    }
+    span{
+      text-align: center;
+      font-weight: 200;
+      color: base.$grayish-Blue;
+      padding:20px;
+    }
+    .request-btn{
+
     }
   }
-  a{
-    text-decoration: none;
-    color:white;
-    text-align: center;
-    padding: 10px 0px;
-  }
-  span{
-    text-align: center;
-    font-weight: 200;
-    color: base.$grayish-Blue;
-    padding:20px;
-  }
-  .request-btn{
-
+}
+@media (min-width:415px){
+  footer{
+    width:100vw;
+    display:block;
+    .encapsulator{
+      width:1110px;
+      margin:auto;
+      padding:20px;
+      display:grid;
+      grid-template-columns:330px 200px 250px 360;
+      grid-template-rows:50px 50px 50px;
+        img{
+          grid-column-start:1;
+          grid-row-start:1;
+        }
+        #social-media-icons{
+          grid-column-start: 1;
+          grid-row-start: 3;
+          margin:0;
+          width:154px;
+          img{
+            padding:0;
+          }
+        }
+        a{
+          text-align: left;
+        }
+        a:nth-of-type(1){
+          grid-column-start:2;
+          grid-row-start:1;
+        }
+        a:nth-of-type(2){
+          grid-column-start:2;
+          grid-row-start:2;
+        }
+        a:nth-of-type(3){
+          grid-column-start:2;
+          grid-row-start:3;
+        }
+        a:nth-of-type(4){
+          grid-column-start:3;
+          grid-row-start:1;
+        }
+        a:nth-of-type(5){
+          grid-column-start:3;
+          grid-row-start:2;
+        }
+        a:nth-of-type(6){
+          grid-column-start:3;
+          grid-row-start:3;
+        }
+        .request-btn{
+        grid-column-start: 5;
+        grid-row-start:1;
+        margin:auto;
+      }
+      span{
+        grid-column-start:5;
+        grid-row-start:3;
+      }
+    }
   }
 }
