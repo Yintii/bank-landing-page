@@ -13,17 +13,20 @@
 <body>
   <div id="navbar">
     <img src="./images/logo.svg" alt="EasyBank Logo">
-    <img src="./images/icon-hamburger.svg" alt="=">
-    <div id="mobile-drawer" class="hidden">
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Blog</a>
-        <a href="#">Careers</a>
-      </nav>
-      <div class="request-btn">
-        Request Invite
+    <img id="menubtn" src="./images/icon-hamburger.svg" alt="=" onClick="menuToggle()">
+    <img id="closeMenubtn" src="./images/icon-close.svg" alt="X" onClick="menuToggle()" class="hidden">
+    <div class="encapsulator">
+      <div id="mobile-drawer" class="hidden">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </nav>
+        <div class="request-btn">
+          Request Invite
+        </div>
       </div>
     </div>
   </div>
@@ -178,5 +181,8 @@
       <span>© Easybank. All Rights Reserved</span>
     </div>
   </footer>
+  <script type="text/javascript" src="menu.js">
+
+  </script>
 </body>
 </html>

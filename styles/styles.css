@@ -25,6 +25,34 @@ body {
 #navbar img {
   align-self: center;
 }
+#navbar .encapsulator {
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  width: 100vw;
+  background: linear-gradient(to top, rgba(45, 49, 77, 0), #2d314d);
+}
+#navbar .encapsulator #mobile-drawer {
+  position: relative;
+  left: 40px;
+  top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  width: 265px;
+  height: 327px;
+  box-shadow: 0px 5px 10px grey;
+}
+#navbar .encapsulator #mobile-drawer nav {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#navbar .encapsulator #mobile-drawer nav a {
+  text-decoration: none;
+  color: black;
+  padding: 15px 0px;
+}
 
 #intro {
   background: url("../images/bg-intro-mobile.svg");
@@ -61,6 +89,34 @@ body {
 }
 
 @media (min-width: 415px) {
+  /*Just working to make the desktop nav bar work here, almost done*/
+  .encapsulator {
+    position: static;
+    width: unset;
+    background: unset;
+  }
+  .encapsulator #mobile-drawer {
+    display: flex;
+    position: static;
+    flex-flow: row nowrap;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 265px;
+    height: 327px;
+    box-shadow: 0px 5px 10px grey;
+  }
+  .encapsulator #mobile-drawer nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .encapsulator #mobile-drawer nav a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 0px;
+  }
+
   #intro {
     background: url("../images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
