@@ -32,6 +32,9 @@ footer{
       text-align: center;
       padding: 10px 0px;
     }
+    a:hover{
+      color:green;
+    }
     span{
       text-align: center;
       font-weight: 200;
@@ -39,7 +42,7 @@ footer{
       padding:20px;
     }
     .request-btn{
-
+      background-color: white;
     }
   }
 }

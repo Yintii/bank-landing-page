@@ -11,11 +11,14 @@
 }
 
 .request-btn{
-  background: linear-gradient(hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+  background: linear-gradient(rgba(49, 211, 92,1),rgba(43, 183, 218,1));
   color: base.$white;
   width:163px;
   padding: 20px 30px;
   margin:10px auto;
   border-radius: 50px;
   text-align: center;
+}
+.request-btn:hover{
+    background: linear-gradient(rgba(49, 211, 92,.5),rgba(43, 183, 218,.5));
 }
