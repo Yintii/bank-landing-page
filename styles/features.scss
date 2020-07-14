@@ -4,6 +4,7 @@
   background-color: base.$light-Grayish-Blue;
   padding: 100px 0px 50px 0px;
   text-align: center;
+  width:unset;
   .feature{
     margin: 30px auto;
     width: 327px;
@@ -27,7 +28,7 @@
   }
 }
 
-@media(min-width:414px){
+@media (min-width:415px){
   #features-section{
     width:100vw;
     display:flex;
